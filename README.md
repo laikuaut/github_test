@@ -28,6 +28,12 @@ git init
 git remote add origin https://github.com/laikuaut/github_test.git
 ```
 
+#### sshプロトコルに変更
+
+```Bash
+git remote set-url origin git@github.com:laikuaut/github_test.git
+```
+
 #### リモートブランチの変更を取得
 
 リモートリポジトリからブランチの変更を反映する。
