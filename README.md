@@ -34,6 +34,15 @@ git remote add origin https://github.com/laikuaut/github_test.git
 git remote set-url origin git@github.com:laikuaut/github_test.git
 ```
 
+鍵作成
+
+```Bash
+mkdir .ssh
+cd ~/.ssh/
+ssh-keygen -t rsa
+# id_rsa_github.pubの中身をgithubのSSH keysに登録
+```
+
 #### リモートブランチの変更を取得
 
 リモートリポジトリからブランチの変更を反映する。
