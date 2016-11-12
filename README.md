@@ -1,9 +1,16 @@
 # github_test
+
 githubになれるためのリポジトリ
 
 ## gitの基本コマンドメモ
 
-### ローカルリポジトリ作成(初期化)
+gitコマンドの基本メモ
+
+### githubで作成したリポジトリの取得
+
+githubで作成したリポジトリをローカルで扱うためのメモ
+
+#### ローカルリポジトリ作成(初期化)
 
 ローカルのgitリポジトリを作成します。
 
@@ -13,7 +20,7 @@ cd github_test
 git init
 ```
 
-### リモートリポジトリの情報追加
+#### リモートリポジトリの情報追加
 
 ローカルリポジトリにリモートリポジトリの情報を追加する。
 
@@ -21,7 +28,7 @@ git init
 git remote add origin https://github.com/laikuaut/github_test.git
 ```
 
-### リモートブランチの変更を取得
+#### リモートブランチの変更を取得
 
 リモートリポジトリからブランチの変更を反映する。
 
@@ -29,10 +36,37 @@ git remote add origin https://github.com/laikuaut/github_test.git
 git pull origin master
 ```
 
-### ローカル作業
+#### 追加されているか確認
+
+リポジトリの状態を取得
+
+```Bash
+git status
+```
 
 #### gitのインデックスを追加
+
+ローカルリポジトリをインデックスへ追加
 
 ```Bash
 git add README.md
 ```
+
+#### コミット
+
+ローカルリポジトリをコミットする。
+
+```Bash
+git commit -m "コメント"
+```
+
+#### ローカルリポジトリをリモートリポジトリへプッシュする
+
+リモートリポジトリへpushする。
+
+```Bash
+git push origin master
+```
+
+
+
