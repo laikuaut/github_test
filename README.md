@@ -52,7 +52,10 @@ ssh -T git@github.com
 
 ### ユーザ名を設定
 
-ユーザ名を指定しないと、githubのYour Contributionsにも反映されないっぽい
+メールアドレスがgithubのと一致していないと、
+Your Contributionsに反映されないっぽい
+
+なので、ユーザ名(一応)とメールアドレスを登録しておく
 
 ```Bash
 git config --global user.name 'laikuaut'
