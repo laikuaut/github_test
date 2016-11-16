@@ -56,6 +56,7 @@ ssh -T git@github.com
 
 ```Bash
 git config --global user.name 'laikuaut'
+git config user.email 'メールアドレス'
 ```
 
 #### リモートブランチの変更を取得
