@@ -50,6 +50,14 @@ ssh-add ~/.ssh/id_rsa_git
 ssh -T git@github.com
 ```
 
+### ユーザ名を設定
+
+ユーザ名を指定しないと、githubのYour Contributionsにも反映されないっぽい
+
+```Bash
+git config --global user.name 'laikuaut'
+```
+
 #### リモートブランチの変更を取得
 
 リモートリポジトリからブランチの変更を反映する。
