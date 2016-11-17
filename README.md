@@ -59,7 +59,7 @@ Your Contributionsに反映されないっぽい
 
 ```Bash
 git config --global user.name 'laikuaut'
-git config user.email 'メールアドレス'
+git config --global user.email 'メールアドレス'
 ```
 
 #### リモートブランチの変更を取得
