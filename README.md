@@ -50,7 +50,7 @@ ssh-add ~/.ssh/id_rsa_git
 ssh -T git@github.com
 ```
 
-### ユーザ名を設定
+#### ユーザ名を設定
 
 メールアドレスがgithubのと一致していないと、
 Your Contributionsに反映されないっぽい
@@ -100,6 +100,22 @@ git commit -m "コメント"
 
 ```Bash
 git push origin master
+```
+
+#### ブランチ確認
+
+全てのブランチを確認
+
+```Bash
+git branch -a
+```
+
+#### ブランチ作成とチェックアウト
+
+ブランチを作成して、チェックアウトする
+
+```Bash
+git checkout -b test_branch
 ```
 
 
