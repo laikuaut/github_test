@@ -118,5 +118,11 @@ git branch -a
 git checkout -b test_branch
 ```
 
+#### ブランチをプッシュ
 
+ブランチをリモートへプッシュする
+
+```Bash
+git push origin test_branch
+```
 
