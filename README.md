@@ -110,8 +110,9 @@ git push origin master
 git branch -a
 git checkout -b branch_name
 # 作業・・・
-git commit -m "fix #(issuesID)" #issueと関連したコメント(pull requestでmergeされた場合、クローズされる)
+git commit --allow-empty -m "fix #(issuesID)" #issueと関連したコメント(pull requestでmergeされた場合、クローズされる)
 # 参考 : https://help.github.com/articles/closing-issues-via-commit-messages/
+# --allow-emptyは差分が存在しなくてもコミットできるオプション(issueと関連付けのために利用すると便利)
 # ・・・・・
 git push origin branch_name
 git remote show origin
