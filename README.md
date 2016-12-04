@@ -102,6 +102,25 @@ git commit -m "コメント"
 git push origin master
 ```
 
+### ブランチを使う
+
+基本手順
+
+```Bash
+git branch -a
+git checkout -b branch_name
+# 作業・・・
+git commit -m "fix #(issuesID)" #issueと関連したコメント(pull requestでmergeされた場合、クローズされる)
+# 参考 : https://help.github.com/articles/closing-issues-via-commit-messages/
+# ・・・・・
+git push origin branch_name
+git remote show origin
+git fetch --prune
+git checkout master
+git pull origin master
+git branch -d branch_name
+```
+
 #### ブランチ確認
 
 全てのブランチを確認
@@ -115,7 +134,7 @@ git branch -a
 ブランチを作成して、チェックアウトする
 
 ```Bash
-git checkout -b test_branch
+git checkout -b branch_name
 ```
 
 #### ブランチをプッシュ
@@ -123,6 +142,26 @@ git checkout -b test_branch
 ブランチをリモートへプッシュする
 
 ```Bash
-git push origin test_branch
+git push origin branch_name
 ```
 
+#### リモートブランチの状態確認
+
+リモートブランチの状態を確認。
+ブランチの更新や削除等が確認できる。
+
+```Bash
+git remote show origin
+```
+
+#### リモートで削除済みのブランチを反映
+
+```Bash
+git fetch --prune
+```
+
+#### ローカルブランチ削除
+
+```Bash
+git branch -d branch_name
+```
