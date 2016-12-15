@@ -166,3 +166,13 @@ git fetch --prune
 ```Bash
 git branch -d branch_name
 ```
+
+## 差分確認
+
+```Bash
+git diff
+```
+
+```Bash
+git difftool --tool=vimdiff --no-prompt
+```
